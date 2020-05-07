@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: `https://blog.akansh.com`, // Site domain. Do not include a trailing slash!
+    siteUrl: `https://joshuah-vaughn.com`, // Site domain. Do not include a trailing slash!
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
@@ -31,7 +31,9 @@ module.exports = {
         },
     ],
 
-    googleAnalyticsId: "", // ADD_COMPLETE_TRACKING_ID => UA-151385213-1
+    googleAnalyticsId: "UA-165828576-1", // ADD_COMPLETE_TRACKING_ID => UA-151385213-1
 
-    disqusShortname: "" // ADD_SHORT_NAME => https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-}
+    disqusShortname: "joshua-vaughn", // ADD_SHORT_NAME => https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    mailChimpEndpoint:
+        "https://joshua-vaughn.us19.list-manage.com/subscribe/post?u=6820041d67b0824333986e5bf&amp;id=07d5eaa76f",
+};
