@@ -3,10 +3,10 @@ module.exports = {
 
     postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
-    siteTitleMeta: `Gatsby Theme Ghost`, // This allows an alternative site title for meta data for pages.
-    siteDescriptionMeta: `Minimalistic Gatsby theme for blog`, // This allows an alternative site description for meta data for pages.
-    siteTwitterHandle: `@akanshgulati`,
-    siteFacebookHandle: `akanshgulati`,
+    siteTitleMeta: `Joshua Vaughn`, // This allows an alternative site title for meta data for pages.
+    siteDescriptionMeta: `Learn all the things!`, // This allows an alternative site description for meta data for pages.
+    siteTwitterHandle: `@J_Vaughn_Dev`,
+    // siteFacebookHandle: `joshuavaughn`,
     language: `en`,
 
     shareImageWidth: 1000, // Change to the width of your default share image

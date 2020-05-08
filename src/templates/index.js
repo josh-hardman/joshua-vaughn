@@ -1,21 +1,21 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
 
-import { Layout, PostCard, Pagination } from '../components/common'
-import { MetaData } from '../components/common/meta'
+import { Layout, PostCard, Pagination } from "../components/common";
+import { MetaData } from "../components/common/meta";
 
 /**
-* Main index page (home page)
-*
-* Loads all posts from Ghost and uses pagination to navigate through them.
-* The number of posts that should appear per page can be setup
-* in /utils/siteConfig.js under `postsPerPage`.
-*
-*/
+ * Main index page (home page)
+ *
+ * Loads all posts from Ghost and uses pagination to navigate through them.
+ * The number of posts that should appear per page can be setup
+ * in /utils/siteConfig.js under `postsPerPage`.
+ *
+ */
 const Index = ({ data, location, pageContext }) => {
-    console.log(`Index`, data)
-    const posts = data.allMarkdownRemark.edges
+    console.log(`Index`, data);
+    const posts = data.allMarkdownRemark.edges;
 
     return (
         <>
@@ -32,8 +32,8 @@ const Index = ({ data, location, pageContext }) => {
                 </div>
             </Layout>
         </>
-    )
-}
+    );
+};
 
 Index.propTypes = {
     data: PropTypes.shape({
@@ -43,9 +43,9 @@ Index.propTypes = {
         pathname: PropTypes.string.isRequired,
     }).isRequired,
     pageContext: PropTypes.object,
-}
+};
 
-export default Index
+export default Index;
 
 // This page query loads all posts sorted descending by published date
 // The `limit` and `skip` values are used for pagination
@@ -78,50 +78,50 @@ export const pageQuery = graphql`
             }
         ) {
             edges {
-              node {
-                id
-                html
-                frontmatter {
-                  title
-                  date
-                  draft
-                  feature_image {
-                    childImageSharp {
-                        fluid(maxWidth: 400, maxHeight: 250) {
-                            ...GatsbyImageSharpFluid
+                node {
+                    id
+                    html
+                    frontmatter {
+                        title
+                        date
+                        draft
+                        feature_image {
+                            childImageSharp {
+                                fluid(maxWidth: 400, maxHeight: 250) {
+                                    ...GatsbyImageSharpFluid
+                                }
+                            }
+                        }
+                        featured
+                        published_at
+                        weight
+                        page
+                        created_at
+                        slug
+                        tag_id
+                        name
+                        description
+                        meta_description
+                        meta_title
+                        visibility
+                        author {
+                            frontmatter {
+                                name
+                                profile_image
+                                description
+                                slug
+                            }
+                        }
+                        tags {
+                            id
+                            frontmatter {
+                                name
+                            }
                         }
                     }
-                  }
-                  featured
-                  published_at
-                  weight
-                  page
-                  created_at
-                  slug
-                  tag_id
-                  name
-                  description
-                  meta_description
-                  meta_title
-                  visibility
-                  author {
-                      frontmatter {
-                          name
-                          profile_image
-                          description
-                          slug
-                      }
-                  }
-                  tags {
-                      id
-                      frontmatter {
-                          name
-                      }
-                  }
+                    excerpt
                 }
-                excerpt
-              }
             }
-          }
+        }
     }
-`
+`;

@@ -3,16 +3,16 @@
   "description": "Minimalistic Gatsby theme, mobile and SEO friendly and supports author, tag and static pages",
   "version": "1.0.2",
   "license": "MIT",
-  "author": "Akansh <me@akansh.com>",
+  "author": "Josh <me@joshua.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/akanshgulati/gatsby-theme-ghost.git"
+    "url": "https://github.com/joshuavaughn/gatsby-theme-ghost.git"
   },
   "engines": {
     "node": ">= 10.0.0"
   },
   "bugs": {
-    "url": "https://github.com/akanshgulati/gatbsy-theme-ghost/issues"
+    "url": "https://github.com/joshuavaughn/gatbsy-theme-ghost/issues"
   },
   "keywords": [
     "gatsby",

@@ -928,7 +928,7 @@ h6 {
 .site-banner {
     max-width: 80%;
     margin: 0 auto;
-    padding: 10vw 0;
+    /* padding: 10vw 0; */
     text-align: center;
 }
 
@@ -1282,7 +1282,7 @@ code.language-text {
 .gatsby-highlight {
     position: relative;
     border-radius: 8px;
-    overflow: hidden;
+    overflow: auto;
     margin: 10px 0;
     background: #001628;
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
