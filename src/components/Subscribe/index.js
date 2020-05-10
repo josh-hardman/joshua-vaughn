@@ -17,33 +17,43 @@ const Subscribe = () => {
     return (
         <div className="sub-wrapper">
             <div className="sub-inner">
-                <h1>Stay in the loop</h1>
-                <span>Get the latest by signing up...</span>
-                <input
-                    className="sub-input"
-                    type="text"
-                    placeholder="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <input
-                    className="sub-input"
-                    type="text"
-                    placeholder="First Name"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                />
-                <button
-                    onClick={() =>
-                        handleSubmit(email, {
-                            PATHNAME: "/blog-post-1",
-                            FNAME: firstName,
-                        })
-                    }
-                >
-                    subscribe
-                </button>
-                {result && <div dangerouslySetInnerHTML={{ __html: result }} />}
+                <span className="sub-message">
+                    Subscribe to recieve latest tips and helpful content.
+                </span>
+                <div className="sub-fields">
+                    <input
+                        className="sub-input"
+                        type="text"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <input
+                        className="sub-input"
+                        type="text"
+                        placeholder="First Name"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                    />
+                    <button
+                        className="sub-button"
+                        onClick={() =>
+                            handleSubmit(email, {
+                                PATHNAME: "/blog-post-1",
+                                FNAME: firstName,
+                            })
+                        }
+                    >
+                        subscribe
+                    </button>
+                </div>
+
+                {result && (
+                    <span
+                        className="sub-response"
+                        dangerouslySetInnerHTML={{ __html: result }}
+                    />
+                )}
             </div>
         </div>
     );

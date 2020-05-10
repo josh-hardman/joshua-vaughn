@@ -18,11 +18,11 @@ module.exports = {
     themeColor: `#15171A`, // Used for Offline Manifest
     cover_image: ``,
 
-    logo: `/images/logo.png`,
+    logo: `/images/devvco.png`,
 
     navigation: [
         {
-            label: `Home`,
+            label: `Posts`,
             url: `/`,
         },
         {
@@ -33,7 +33,7 @@ module.exports = {
 
     googleAnalyticsId: "UA-165828576-1", // ADD_COMPLETE_TRACKING_ID => UA-151385213-1
 
-    disqusShortname: "joshua-vaughn", // ADD_SHORT_NAME => https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    // disqusShortname: "joshua-vaughn", // ADD_SHORT_NAME => https://help.disqus.com/en/articles/1717111-what-s-a-shortname
     mailChimpEndpoint:
         "https://joshua-vaughn.us19.list-manage.com/subscribe/post?u=6820041d67b0824333986e5bf&amp;id=07d5eaa76f",
 };

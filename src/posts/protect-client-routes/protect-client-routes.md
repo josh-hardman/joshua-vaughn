@@ -2,7 +2,7 @@
 title: "How do you protect authenticated routes in React Router?"
 date: 2019-11-30T00:00:00+05:30
 draft: false
-feature_image: feature-image.png
+feature_image: feature-image.jpg
 featured: true
 published_at: 2019-11-30T00:00:00+05:30
 updated_at: 2019-11-30T00:00:00+05:30
@@ -10,7 +10,7 @@ created_at: 2019-11-30T00:00:00+05:30
 weight: 2
 page: true
 tags:
-    - education
+    - routing
 slug: "protect-client-routes"
 author: "joshua"
 comment: true

@@ -44,11 +44,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                         <div className="container">
                             <div className="site-mast">
                                 <div
-                                    className={
-                                        isHome
-                                            ? `site-mast-left`
-                                            : `site-mast-left-flex`
-                                    }
+                                    // className={
+                                    //     isHome
+                                    //         ? `site-mast-left`
+                                    //         : `site-mast-left-flex`
+                                    // }
+                                    className="site-mast-left-flex"
                                 >
                                     <Link to="/">
                                         {config.logo ? (
@@ -67,16 +68,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                             />
                                         )}
                                     </Link>
-                                    {isHome ? null : (
-                                        <nav className="site-nav">
-                                            <div className="site-nav-left">
-                                                <Navigation
-                                                    data={config.navigation}
-                                                    navClass="site-nav-item"
-                                                />
-                                            </div>
-                                        </nav>
-                                    )}
+                                    {/* {isHome ? null : ( */}
+                                    <nav className="site-nav">
+                                        <div className="site-nav-left">
+                                            <Navigation
+                                                data={config.navigation}
+                                                navClass="site-nav-item"
+                                            />
+                                        </div>
+                                    </nav>
+                                    {/* )} */}
                                 </div>
                                 <div className="site-mast-right">
                                     {config.siteTwitterHandle && (
@@ -121,30 +122,28 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </a>
                                 </div>
                             </div>
-                            {isHome ? (
-                                <div className="site-banner">
-                                    <h1 className="site-banner-title">
-                                        {config.siteTitleMeta}
-                                    </h1>
-                                    <p className="site-banner-desc">
-                                        {config.siteDescriptionMeta}
-                                    </p>
+                            {/* {isHome ? ( */}
+                            {/* <div className="site-banner">
+                                <h1 className="site-banner-title">
+                                    {config.siteTitleMeta}
+                                </h1>
+                                <p className="site-banner-desc">
+                                    {config.siteDescriptionMeta}
+                                </p>
+                            </div> */}
+                            {/* ) : null} */}
+                            {/* {isHome ? ( */}
+                            {/* <nav className="site-nav">
+                                <div className="site-nav-left">
+                                    <Navigation
+                                        data={config.navigation}
+                                        navClass="site-nav-item"
+                                    />
                                 </div>
-                            ) : null}
-                            {isHome ? (
-                                <nav className="site-nav">
-                                    <div className="site-nav-left">
-                                        {/* The navigation items as setup in Ghost */}
-                                        <Navigation
-                                            data={config.navigation}
-                                            navClass="site-nav-item"
-                                        />
-                                    </div>
-                                    <div className="site-nav-right">
-                                        {/* <Link className="site-nav-button" to="/about">About</Link> */}
-                                    </div>
-                                </nav>
-                            ) : null}
+                                <div className="site-nav-right">
+                                </div>
+                            </nav> */}
+                            {/* ) : null} */}
                         </div>
                     </header>
 

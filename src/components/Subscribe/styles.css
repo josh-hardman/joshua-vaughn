@@ -2,16 +2,39 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    display: flex;
 }
 
 .sub-inner {
+    background: #f2f2f2;
+    padding: 36px 24px;
     display: flex;
     flex-direction: column;
+    border-radius: 12px;
+}
+
+.sub-fields {
+    display: flex;
 }
 
 .sub-input {
     padding: 17px;
-    border: 2px solid #377b00;
     height: 56px;
+    font-size: 18px;
+}
+
+.sub-button {
+    background: orangered;
+    color: white;
+    margin: 1px 8px;
+}
+
+.sub-response {
+    font-size: 14px;
+}
+
+.sub-message {
+    line-height: 24px;
+    margin-bottom: 12px;
     font-size: 18px;
 }

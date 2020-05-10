@@ -906,7 +906,7 @@ h6 {
 }
 
 .site-logo {
-    height: 25px;
+    height: 75px;
 }
 
 .site-mast {
@@ -1274,7 +1274,7 @@ code.language-text {
     overflow-wrap: break-word;
     word-wrap: break-word;
     padding: 0.1rem 0.3rem 0.2rem;
-    background: rgba(14, 30, 37, 0.09);
+    background: rgba(14, 30, 37, 0.9);
     border: 2px solid transparent;
     border-radius: 4px;
 }
