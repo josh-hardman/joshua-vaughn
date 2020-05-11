@@ -1,7 +1,6 @@
 {
   "name": "gatsby-theme-ghost",
   "description": "Minimalistic Gatsby theme, mobile and SEO friendly and supports author, tag and static pages",
-  "version": "1.0.2",
   "license": "MIT",
   "author": "Josh <me@joshua.com>",
   "repository": {
@@ -27,8 +26,8 @@
   "main": "n/a",
   "scripts": {
     "serve": "gatsby build && NODE_ENV=production gatsby serve",
-    "build": "gatsby clean && gatsby build",
-    "dev": "gatsby clean && gatsby develop",
+    "build": "gatsby build",
+    "dev": "gatsby develop",
     "lint": "eslint . --ext .js --cache --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -36,7 +35,7 @@
     "eslint": "5.16.0",
     "eslint-plugin-ghost": "0.2.0",
     "eslint-plugin-react": "7.13.0",
-    "gatsby": "2.8.2",
+    "gatsby": "^2.21.21",
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
